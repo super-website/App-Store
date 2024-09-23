@@ -1,29 +1,30 @@
 import { apps } from '../data'
 import { Link } from 'react-router-dom'
-// import './App.css' // Import the CSS file for custom styles
-
 const Applications = () => {
   const handleClick = () => {
     window.scroll(0, 0)
   }
   return (
-    <main className='mt-20 mb-10 bg-gray-900'>
-      <div className='max-w-6xl m-auto'>
+    <main className='mt-10 bg-gray-900 mb-10'>
+      <div className='max-w-6xl m-auto '>
         <div className='text-center'>
           <h2 className='text-3xl font-semibold tracking-wide pt-12'>
             Meaningful digital solutions that actually work
           </h2>
         </div>
-        <div className='mt-12 swiper-container'>
-          <div className='swiper-wrapper'>
-            {apps.map((item) => {
-              const { title, src, alt_description, description } = item
-              return (
-                <div
-                  key={item.id}
-                  className='swiper-slide flex flex-col rounded-3xl border border-gray-100 bg-white p-6 shadow-xl shadow-white-600/10 dark:border-gray-700 dark:bg-gray-800  swiper-slide-active'
-                >
-                  <Link to={`/app/${item.id}`} onClick={handleClick}>
+        <div className='mt-12'>
+          <div className=''>
+            <div className='grid grid-cols-3 gap-24' style={{ cursor: 'grab' }}>
+              {apps.map((item) => {
+                const { title, src, alt_description, description } = item
+                return (
+                  <Link
+                    className='swiper-slide flex flex-col rounded-3xl border border-gray-100 bg-white p-6 shadow-xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none swiper-slide-active'
+                    style={{ width: '352px', marginRight: '24px' }}
+                    key={item.id}
+                    to={`/app/${item.id}`}
+                    onClick={handleClick}
+                  >
                     <div className='flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-primaryLight to-secondaryLight'>
                       <img src={src} alt={alt_description} />
                     </div>
@@ -36,9 +37,9 @@ const Applications = () => {
                       </p>
                     </div>
                   </Link>
-                </div>
-              )
-            })}
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>
