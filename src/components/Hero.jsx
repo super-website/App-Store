@@ -8,7 +8,7 @@ const Hero = () => {
           <h1 className='text-center text-5xl font-bold text-white-900 dark:text-white sm:text-6xl lg:text-left lg:text-7xl'>
             <span className='relative mb-1 block'>
               <span className='relative bg-gradient-to-r from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight md:pr-2'>
-                Design-led
+                Design
               </span>
             </span>
             Engineering
