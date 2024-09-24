@@ -17,13 +17,6 @@ const Navbar = () => {
             <Link to='/' onClick={handleClick}>
               <img src={app_logo} className='nav-logo' alt='App Factory' />
             </Link>
-            <button
-              type='button'
-              className='nav-toggle md:hidden'
-              id='nav-toggle'
-            >
-              <FaBars />
-            </button>
           </div>
           {/* <!-- left this comment on purpose --> */}
           <ul
