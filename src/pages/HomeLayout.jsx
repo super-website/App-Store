@@ -3,7 +3,7 @@ import { Footer, Navbar } from '../components'
 
 const HomeLayout = () => {
   return (
-    <div>
+    <div className='py-10'>
       <Navbar />
       <Outlet />
       <Footer />

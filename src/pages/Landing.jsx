@@ -4,7 +4,6 @@ import { About, Applications, Hero } from '../components'
 const Landing = () => {
   return (
     <div>
-      {/* <Slider /> */}
       <Hero />
       <About />
       <Applications />
