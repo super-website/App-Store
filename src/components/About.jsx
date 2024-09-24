@@ -16,10 +16,10 @@ const About = () => {
         <div className='mt-20'>
           <div className='gap-6 space-y-12 md:flex md:space-y-0'>
             <div className='relative text-center md:mb-32 md:w-3/5 md:pr-16 md:text-left'>
-              <h3 className='text-2xl font-bold text-white dark:text-white md:text-3xl'>
+              <h3 className='text-2xl font-bold text-white md:text-3xl'>
                 Decades of experience in design and development
               </h3>
-              <p className='mt-8 text-lg text-gray-600 dark:text-gray-300'>
+              <p className='mt-8 text-lg text-gray-200 '>
                 The App Factory serves as an end-to-end mobile product agency,
                 emphasizing on the design and development of businesses and
                 startups with a mobile-centric approach. It was established by
