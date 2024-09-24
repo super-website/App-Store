@@ -1,6 +1,6 @@
 export const pageLinks = [
-  { id: 1, link: '/', text: 'home' }
-  { id: 2, link: '/faqs', text: 'faqs' }
+  { id: 1, link: '/', text: 'home' },
+  { id: 2, link: '/faqs', text: 'faqs' },
 ]
 
 export const apps = [
