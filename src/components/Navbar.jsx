@@ -1,6 +1,5 @@
 import { pageLinks } from '../data'
 import app_logo from '../assets/app-logo.png'
-import { FaBars } from 'react-icons/fa'
 import { Link, NavLink } from 'react-router-dom'
 const Navbar = () => {
   const handleClick = () => {
