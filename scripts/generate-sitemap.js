@@ -1,4 +1,6 @@
 import { createSitemap } from 'sitemap'
+console.log(createSitemap)
+
 import fs from 'fs'
 
 // Define your routes
