@@ -60,7 +60,7 @@ export const apps = [
   },
   {
     id: 6,
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Instagram.webp/768px-Instagram.webp',
+    src: 'https://cdn.iconscout.com/icon/free/png-256/free-instagram-logo-icon-download-in-svg-png-gif-file-formats--share-image-chat-social-media-pack-logos-icons-1466166.png?f=webp&w=256',
     alt_description: 'UX and UI Design',
     title: 'Instagram',
     description:
