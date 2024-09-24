@@ -23,7 +23,12 @@ const SinglePage = () => {
           </div>
           <div className='flex '>
             <div className='border-white border p-2'>
-              <img src={page.src} alt='whatsapp' className='max-w-96' />
+              <img
+                src={page.src}
+                alt='whatsapp'
+                className='max-w-96'
+                width={200}
+              />
             </div>
             <div className='text-left  mt-4'>
               <div className='ml-10'>
