@@ -3,7 +3,7 @@ import { faqs } from '../data'
 const Faqs = () => {
   return (
     <div className='max-w-6xl bg-gray-900 m-auto py-10'>
-      <h2 className='text-3xl text-center text-primary my-3'>Faqs</h2>
+      <h2 className='text-3xl text-center text-white my-3'>Faqs</h2>
       {faqs.map((faq) => {
         const { id, question, answer } = faq
         return (
