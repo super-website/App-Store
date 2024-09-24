@@ -5,7 +5,7 @@ export const pageLinks = [
 export const apps = [
   {
     id: 1,
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.webp/2048px-LinkedIn_icon.webp',
+    src: 'https://e7.pngegg.com/pngimages/777/441/png-clipart-linkedin-linkedin-thumbnail.png',
     alt_description: 'SEO',
     title: 'LinkedIn',
     description:
@@ -16,7 +16,7 @@ export const apps = [
   },
   {
     id: 2,
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/WeTransfer_logo.webp/2560px-WeTransfer_logo.webp',
+    src: 'https://avatars.githubusercontent.com/u/14807662?s=280&v=4',
     alt_description: 'AI Solutions',
     title: 'WeTransfer',
     description:
@@ -27,7 +27,7 @@ export const apps = [
   },
   {
     id: 3,
-    src: 'https://www.svgrepo.com/show/183616/pinterest.webp',
+    src: 'https://i0.wp.com/www.authormedia.com/wp-content/uploads/2013/05/pinterest-badge-red.png?resize=800%2C675&ssl=1',
     alt_description: 'Staff Augmentation',
     title: 'Pinterest',
     description:
