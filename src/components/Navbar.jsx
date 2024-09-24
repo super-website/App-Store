@@ -22,31 +22,27 @@ const Navbar = () => {
             className='space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm nav-links sm:flex sm:items-center'
             id='nav-links'
           >
-            {pageLinks.map((link) => {
-              return (
-                <li key={link.id}>
-                  <NavLink
-                    to={link.link}
-                    href={link.href}
-                    onClick={handleClick}
-                    className='block transition hover:text-primary dark:hover:text-primaryLight md:px-4 dark:hover:text-primaryLight'
-                  >
-                    {link.text}
-                  </NavLink>
-                </li>
-              )
-            })}
+            {pageLinks.map((link) => (
+              <li key={link.id}>
+                <NavLink
+                  to={link.link}
+                  onClick={handleClick}
+                  className='block transition hover:text-primary dark:hover:text-primaryLight md:px-4'
+                >
+                  {link.text}
+                </NavLink>
+              </li>
+            ))}
             <li>
               <a
                 className='relative ml-auto flex h-11 sm:h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800'
                 href='#contact-us'
               >
                 <span className='relative text-base sm:text-sm font-semibold text-gray-900 dark:text-gray-900 lg:text-primary lg:dark:text-white'>
-                  Let&#39;s talk
+                  Let's Talk
                 </span>
               </a>
             </li>
-            {/* </span> */}
           </ul>
         </div>
       </div>
