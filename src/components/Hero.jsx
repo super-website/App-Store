@@ -5,7 +5,7 @@ const Hero = () => {
     <section className='pt-32 sm:pt-60  md:pt-48' id='home'>
       <div className='mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0'>
         <div className='relative'>
-          <h1 className='text-center text-5xl font-bold text-white-900 dark:text-white sm:text-6xl lg:text-left lg:text-7xl'>
+          <h1 className='text-center text-5xl font-bold  text-white sm:text-6xl lg:text-left lg:text-7xl'>
             <span className='relative mb-1 block'>
               <span className='relative bg-gradient-to-r from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight md:pr-2'>
                 Design
@@ -33,7 +33,7 @@ const Hero = () => {
             </div>
           </div>
           <div className='mt-12 border-y border-gray-100 py-8 text-center dark:border-gray-800 md:py-12 xl:mt-20'>
-            <span className='text-sm font-semibold tracking-wider text-gray-800 dark:text-white'>
+            <span className='text-sm font-semibold tracking-wider text-white'>
               BRANDS WE WORKED ON
             </span>
             <div className='mt-8 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 md:gap-4'>
