@@ -49,7 +49,7 @@ const Hero = () => {
                       width={width}
                       height={height}
                       className='h-auto max-h-full w-auto max-w-full'
-                      src={src}
+                    src={src}
                       style={{ color: 'transparent' }} // Note: color property doesn't apply to images
                     />
                   </div>

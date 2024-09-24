@@ -9,9 +9,9 @@ const SinglePage = () => {
 
   return (
     <>
-      <section className='pt-40 md:pt-32 sm:pt-40 mb-10' id='home'>
+      <section className='pt-20 sm:pt-10 mb-10' id='home'>
         <div className='max-w-6xl m-auto '>
-          <div className='text-md breadcrumbs mb-3'>
+          <div className='text-md breadcrumbs mb-3 sm:px-5 md:px-0'>
             <ul>
               <li>
                 <Link to='/'>Home</Link>
@@ -21,12 +21,12 @@ const SinglePage = () => {
               </li>
             </ul>
           </div>
-          <div className='flex '>
-            <div className='border-white border p-2'>
+          <div className='flex sm:flex-col md:flex-row'>
+            <div className='border-white border p-2 w-60 mx-auto md:mx-0'>
               <img
                 src={page.src}
                 alt='whatsapp'
-                className='max-w-60'
+                className='max-w-60 sm:mx-auto md:mx-0'
                 width={200}
               />
             </div>
@@ -37,7 +37,7 @@ const SinglePage = () => {
                 </h2>
                 <p className='text-primary'>{page.alt_description}</p>
               </div>
-              <div className='mt-10 ml-10 gap-5 flex items-center justify-start mr-20 '>
+              <div className='mt-10 ml-10 gap-5 flex '>
                 <a
                   href={page.ios}
                   target='blank'
