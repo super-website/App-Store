@@ -1,5 +1,4 @@
 import { About, Applications, Hero } from '../components'
-import Team from '../components/Team'
 // import Slider from '../components/Slider'
 
 const Landing = () => {
@@ -7,7 +6,6 @@ const Landing = () => {
     <div>
       {/* <Slider /> */}
       <Hero />
-      <Team />
       <About />
       <Applications />
     </div>
