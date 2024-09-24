@@ -15,7 +15,7 @@ const Hero = () => {
           </h1>
           <div className='relative items-center gap-12 lg:flex'>
             <div className='text-center sm:mx-auto sm:w-11/12 md:mt-12 md:w-4/5 lg:mr-auto lg:mt-0 lg:w-6/12 lg:text-left'>
-              <p className='mt-12 text-lg  text-gray-300 sm:text-xl'>
+              <p className='mt-12 text-lg  text-gray-100 sm:text-xl'>
                 Design-led engineering integrates design thinking into product
                 development, fostering collaboration between engineers and
                 designers to create solutions that are technologically sound,
