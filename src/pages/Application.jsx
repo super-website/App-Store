@@ -26,7 +26,12 @@ const Application = () => {
                     onClick={handleClick}
                   >
                     <div className='flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-primaryLight to-secondaryLight'>
-                      <img src={src} alt={alt_description} />
+                      <img
+                        src={src}
+                        alt={alt_description}
+                        className='max-w-20'
+                        width={40}
+                      />
                     </div>
                     <div className='mt-4 grow'>
                       <h3 className='text-xl font-semibold leading-8 text-gray-800 transition dark:text-white'>
