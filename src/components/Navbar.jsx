@@ -36,16 +36,16 @@ const Navbar = () => {
                 </li>
               )
             })}
-
-            <span className='mt-12 -ml-1 flex  w-full flex-col space-y-2 border-gray-700 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6'></span>
-            <a
-              className='relative ml-auto flex h-11 sm:h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800'
-              href='#contact-us'
-            >
-              <span className='relative text-base sm:text-sm font-semibold text-gray-900 dark:text-gray-900 lg:text-primary lg:dark:text-white'>
-                Let&#39;s talk
-              </span>
-            </a>
+            <li>
+              <a
+                className='relative ml-auto flex h-11 sm:h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800'
+                href='#contact-us'
+              >
+                <span className='relative text-base sm:text-sm font-semibold text-gray-900 dark:text-gray-900 lg:text-primary lg:dark:text-white'>
+                  Let&#39;s talk
+                </span>
+              </a>
+            </li>
             {/* </span> */}
           </ul>
         </div>
