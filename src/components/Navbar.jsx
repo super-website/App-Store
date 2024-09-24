@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className='relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4'>
           <div className='relative z-20 flex w-full justify-between md:px-0 lg:w-max'>
             <Link to='/' onClick={handleClick}>
-              <img src={app_logo} className='nav-logo' alt='App Factory' />
+              <img src={app_logo} className='nav-logo max-h-full max-w-full' alt='App Factory' />
             </Link>
           </div>
           {/* <!-- left this comment on purpose --> */}

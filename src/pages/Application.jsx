@@ -29,7 +29,7 @@ const Application = () => {
                       <img
                         src={src}
                         alt={alt_description}
-                        className='max-w-20'
+                        className='max-w-full max-h-full'
                         width={40}
                       />
                     </div>
