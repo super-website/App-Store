@@ -3,7 +3,7 @@ const About = () => {
     <section id='about' className='mt-32'>
       <div className='mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0'>
         <div className='text-center'>
-          <span className='text-sm font-semibold uppercase tracking-widest text-primary dark:text-secondaryLight'>
+          <span className='text-sm font-semibold uppercase tracking-widest text-secondaryLight'>
             About The Factory
           </span>
           <h2 className='mx-auto my-6 text-center text-4xl font-bold text-white-900 dark:text-white sm:max-w-2xl lg:max-w-3xl lg:text-5xl'>
