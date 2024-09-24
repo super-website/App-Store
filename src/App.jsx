@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import HomeLayout from './pages/HomeLayout'
 import Landing from './pages/Landing'
 import SinglePage from './pages/SinglePage'
+import Faqs from './components/Faqs'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: 'app/:id',
         element: <SinglePage />,
+      },
+      {
+        path: 'faqs',
+        element: <Faqs />,
       },
     ],
   },

@@ -1,4 +1,7 @@
-export const pageLinks = [{ id: 1, link: '/', text: 'home' }]
+export const pageLinks = [
+  { id: 1, link: '/', text: 'home' }
+  { id: 2, link: '/faqs', text: 'faqs' }
+]
 
 export const apps = [
   {

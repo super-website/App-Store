@@ -1,7 +1,10 @@
 import { SitemapStream, streamToPromise } from 'sitemap'
 import fs from 'fs'
 
-const links = [{ url: '/', changefreq: 'daily', priority: 1.0 }]
+const links = [
+  { url: '/', changefreq: 'daily', priority: 1.0 },
+  { url: '/faqs', changefreq: 'daily', priority: 1.0 },
+]
 
 const sitemapStream = new SitemapStream({
   hostname: 'https://app-factory.netlify.app/',
