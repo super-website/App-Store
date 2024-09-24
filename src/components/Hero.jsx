@@ -2,7 +2,7 @@ import logo from '../assets/logo.webp'
 import { products } from '../data'
 const Hero = () => {
   return (
-    <section className='pt-32 sm:pt-60  md:pt-48' id='home'>
+    <section className='' id='home'>
       <div className='mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0'>
         <div className='relative'>
           <h1 className='text-center text-5xl font-bold  text-white sm:text-6xl lg:text-left lg:text-7xl'>
@@ -49,7 +49,7 @@ const Hero = () => {
                       width={width}
                       height={height}
                       className='h-auto max-h-full w-auto max-w-full'
-                    src={src}
+                      src={src}
                       style={{ color: 'transparent' }} // Note: color property doesn't apply to images
                     />
                   </div>
