@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.webp'
 import { products } from '../data'
 const Hero = () => {
   return (
