@@ -15,7 +15,7 @@ const Applications = () => {
         <div className='mt-12'>
           <div className=''>
             <div
-              className='grid lg:grid-cols-3 gap-24 md:grid-cols-2 sm:grid-cols-1'
+              className='grid lg:grid-cols-3 gap-24 md:grid-cols-2 '
               style={{ cursor: 'grab' }}
             >
               {apps.map((item) => {
