@@ -41,7 +41,7 @@ const About = () => {
                 loading='lazy'
                 width='640'
                 height='960'
-                className='h-full rounded-3xl object-cover object-center md:absolute md:left-0 md:top-0 md:w-full md:align-middle'
+                className='h-full rounded-3xl object-cover object-center md:absolute md:left-0 md:top-0 md:w-full md:align-middle max-h-full max-w-full'
                 style={{ color: 'transparent' }}
                 sizes=''
                 src='https://theappfactory.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fteam.67a17160.jpeg&w=640&q=75'
