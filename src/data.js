@@ -38,7 +38,7 @@ export const apps = [
   },
   {
     id: 4,
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.webp/2491px-Logo_of_Twitter.webp',
+    src: 'https://cdn-icons-png.flaticon.com/512/81/81725.png',
     alt_description: 'Web Development',
     title: 'Twitter',
     description:
