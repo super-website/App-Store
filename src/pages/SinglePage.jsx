@@ -26,7 +26,7 @@ const SinglePage = () => {
               <img
                 src={page.src}
                 alt='whatsapp'
-                className='max-w-96'
+                className='max-w-60'
                 width={200}
               />
             </div>
