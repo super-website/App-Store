@@ -49,7 +49,7 @@ export const apps = [
   },
   {
     id: 5,
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.webp/768px-WhatsApp.webp',
+    src: 'https://i.pinimg.com/474x/f7/1f/fb/f71ffb7ad7db43ccc7b1466de418f254.jpg',
     alt_description: 'Web App Development',
     title: 'WhatsApp',
     description:
