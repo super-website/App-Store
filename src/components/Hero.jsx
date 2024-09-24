@@ -27,11 +27,6 @@ const Hero = () => {
                 We create human-centered, functional and delightful digital
                 experiences.
               </p>
-              <a className='relative mx-auto mt-12 flex h-12 w-max items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary bg-indigo-500 rounded-3xl before:transition-transform before:duration-300 active:duration-75 active:before:scale-95 :before:bg-primaryLight lg:mx-0'>
-                <span className='relative text-base font-semibold text-white dark:text-gray-900'>
-                  Lets get started
-                </span>
-              </a>
             </div>
             <div className='mt-12 w-full overflow-hidden sm:mt-16 lg:-mr-20 lg:-mt-52 lg:w-6/12'>
               <img src={logo} alt='logo' className='logo' />
