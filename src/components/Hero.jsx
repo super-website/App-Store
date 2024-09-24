@@ -48,9 +48,9 @@ const Hero = () => {
                       alt={alt_description}
                       width={width}
                       height={height}
-                      className='h-16 w-auto lg:h-24'
-                      style={{ color: 'transparent' }}
+                      className='h-auto max-h-full w-auto max-w-full'
                       src={src}
+                      style={{ color: 'transparent' }} // Note: color property doesn't apply to images
                     />
                   </div>
                 )
