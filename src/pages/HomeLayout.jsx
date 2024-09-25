@@ -3,9 +3,11 @@ import { Footer, Navbar } from '../components'
 
 const HomeLayout = () => {
   return (
-    <div className='sm:pt-10 md:pt-24'>
+    <div>
       <Navbar />
-      <Outlet />
+      <div className='sm:pt-10 md:pt-24'>
+        <Outlet />
+      </div>
       <Footer />
     </div>
   )
