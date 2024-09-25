@@ -1,6 +1,5 @@
-import { faqs } from '../data'
 import { Helmet } from 'react-helmet'
-
+import { faqs } from '../data'
 const Faqs = () => {
   return (
     <div className='max-w-6xl bg-gray-900 m-auto py-10'>
