@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className='fixed top-0 inset-x-0 z-20 w-full border-b backdrop-blur border-gray-700/30 bg-gray-900/80 py-3'>
       <div className='mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0'>
         <div className='relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-2'>
-          <div className='relative z-20 w-full justify-between md:px-0 lg:w-max'>
+          <div className='relative z-20 justify-between md:px-0 lg:w-max'>
             <Link to='/' onClick={handleClick}>
               <img
                 src={app_logo}
