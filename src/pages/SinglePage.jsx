@@ -15,7 +15,9 @@ const SinglePage = () => {
   return (
     <>
       <Helmet>
-        <title>{page.title}</title>
+        <title>
+          {page.title} | {page.alt_description}
+        </title>
         <meta
           name='description'
           content={page.description || 'Default description for your app.'}
