@@ -38,7 +38,7 @@ const Hero = () => {
             </span>
             <div className='mt-8 grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 md:gap-4 '>
               {products.map((item) => {
-                const { id, src, alt_description, width, height } = item
+                const { id, src, alt_description } = item
                 return (
                   <div
                     className='bg-gray-50 rounded-2xl shadow flex items-center justify-center h-32 w-full md:h-36'
@@ -46,11 +46,10 @@ const Hero = () => {
                   >
                     <img
                       alt={alt_description}
-                      width={width}
-                      height={height}
-                      className='h-auto max-h-full w-auto max-w-full'
+                      width={200}
+                      height={200}
+                      className=' max-h-full  max-w-full'
                       src={src}
-                      style={{ color: 'transparent' }} // Note: color property doesn't apply to images
                     />
                   </div>
                 )
