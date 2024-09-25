@@ -2,13 +2,25 @@ import { Link, useParams } from 'react-router-dom'
 import { apps } from '../data'
 import { FaCheckCircle, FaApple, FaAndroid } from 'react-icons/fa'
 import Application from './Application'
+import { Helmet } from 'react-helmet'
 
 const SinglePage = () => {
   const { id } = useParams()
-  const page = apps.find((item) => item.id == +id)
+  const page = apps.find((item) => item.id === +id)
+
+  if (!page) {
+    return <div>Page not found.</div>
+  }
 
   return (
     <>
+      <Helmet>
+        <title>{page.title}</title>
+        <meta
+          name='description'
+          content={page.description || 'Default description for your app.'}
+        />
+      </Helmet>
       <section className='pt-20 sm:pt-10 mb-10' id='home'>
         <div className='max-w-6xl m-auto '>
           <div className='text-md breadcrumbs mb-3 sm:px-5 md:px-0'>
