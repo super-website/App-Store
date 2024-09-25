@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { pageLinks } from '../data'
 import app_logo from '../assets/app-logo.webp'
 import { Link, NavLink } from 'react-router-dom'
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaCross } from 'react-icons/fa'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -36,7 +36,7 @@ const Navbar = () => {
             className='block fixed right-8 top-3 lg:hidden '
             onClick={toggleMenu}
           >
-            <FaBars />
+            {isOpen ? <FaCross /> : <FaBars />}
           </button>
           <ul
             className={`${
