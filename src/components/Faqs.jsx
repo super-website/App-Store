@@ -11,7 +11,7 @@ const Faqs = () => {
             <input type='radio' name='accordion' id={id} />
             <label
               htmlFor={id}
-              className='collapse-title text-xl font-medium text-primary'
+              className='collapse-title text-xl font-medium text-white'
             >
               {question}
             </label>
