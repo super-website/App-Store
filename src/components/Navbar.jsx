@@ -35,7 +35,7 @@ const Navbar = () => {
           <button
             className='block fixed right-8 top-3 lg:hidden '
             onClick={toggleMenu}
-            name='toggleBtn'
+            aria-label='Close'
           >
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
