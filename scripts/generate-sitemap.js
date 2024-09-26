@@ -1,8 +1,14 @@
 import { SitemapStream, streamToPromise } from 'sitemap'
 import fs from 'fs'
+import { apps } from '../src/data.js'
 
 const links = [
   { url: '/', changefreq: 'daily', priority: 1.0 },
+  ...apps.map((item) => ({
+    url: `/app/${item.id}`,
+    changefreq: 'daily',
+    priority: 0.8,
+  })),
   { url: '/faqs', changefreq: 'daily', priority: 1.0 },
 ]
 
