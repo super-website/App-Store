@@ -1,5 +1,7 @@
 # Redirect all traffic to the app factory website
-Redirect 301 / https://www.app-factory.netlify.app/
+Redirect 301 / https://www.app-factory.netlify.app/ 
+https://www.app-factory.netlify.app/* https://app-factory.netlify.app/:splat 301!
+
 
 # Serve index.html for any other request
 /*    /index.html   200
