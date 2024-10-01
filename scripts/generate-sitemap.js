@@ -13,7 +13,7 @@ const links = [
 ]
 
 const sitemapStream = new SitemapStream({
-  hostname: 'https://app-factory.netlify.app/',
+  hostname: 'https://appforge.netlify.app/',
 })
 
 const writeStream = fs.createWriteStream('./public/sitemap.xml')
