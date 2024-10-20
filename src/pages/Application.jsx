@@ -38,7 +38,7 @@ const Application = () => {
                       <h3 className='text-xl font-semibold leading-8 text-gray-800 transition dark:text-white'>
                         {title}
                       </h3>
-                      <p className='mb-3 mt-1 text-gray-600 dark:text-gray-300 max-w-xs'>
+                      <p className='mb-3 mt-1 text-gray-600 dark:text-gray-300 max-w-sm'>
                         {description}
                       </p>
                     </div>
