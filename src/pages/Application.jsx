@@ -21,12 +21,12 @@ const Application = () => {
                 const { title, src, alt_description, description } = item
                 return (
                   <Link
-                    className='flex flex-col rounded-3xl border border-gray-100 bg-white p-6 shadow-xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none'
+                    className='flex flex-col rounded-3xl border  p-6 shadow-xl shadow-gray-600/10 border-gray-700 bg-gray-800 dark:shadow-none'
                     key={item.id}
                     to={`/app/${item.id}`}
                     onClick={handleClick}
                   >
-                    <div className='flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-primaryLight to-secondaryLight'>
+                    <div className='flex h-14 w-12 items-center justify-center rounded-full bg-gradient-to-r from-primaryLight to-secondaryLight'>
                       <img
                         src={src}
                         alt={alt_description}
@@ -38,7 +38,7 @@ const Application = () => {
                       <h3 className='text-xl font-semibold leading-8 text-gray-800 transition dark:text-white'>
                         {title}
                       </h3>
-                      <p className='mb-3 mt-1 text-gray-600 dark:text-gray-300'>
+                      <p className='mb-3 mt-1 text-gray-600 dark:text-gray-300 max-w-xs'>
                         {description}
                       </p>
                     </div>
