@@ -6,7 +6,7 @@ const Applications = () => {
   }
   return (
     <main className='mt-10 bg-gray-900 mb-10'>
-      <div className='max-w-6xl m-auto '>
+      <div className='max-w-6xl m-auto  md:w-full mx-auto'>
         <div className='text-center'>
           <h2 className='text-3xl font-semibold tracking-wide pt-12'>
             Meaningful digital solutions that actually work
