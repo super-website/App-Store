@@ -1,29 +1,27 @@
 import { apps } from '../data'
 import { Link } from 'react-router-dom'
+
 const Application = () => {
   const handleClick = () => {
     window.scroll(0, 0)
   }
+
   return (
     <main className='mt-10 bg-gray-900 mb-10'>
-      <div className='max-w-6xl m-auto '>
+      <div className='max-w-6xl m-auto'>
         <div className='text-center'>
           <h2 className='text-3xl font-semibold tracking-wide pt-12'>
             Meaningful digital solutions that actually work
           </h2>
         </div>
         <div className='mt-12'>
-          <div className=''>
-            <div
-              className='grid lg:grid-cols-3 gap-24 px-4 md:grid-cols-2 grid-cols-1 '
-              style={{ cursor: 'grab' }}
-            >
-              {apps.map((item) => {
+          <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-24 px-4 max-w-md'>
+            {apps.length > 0 ? (
+              apps.map((item) => {
                 const { title, src, alt_description, description } = item
                 return (
                   <Link
-                    className='swiper-slide flex flex-col rounded-3xl border border-gray-100 bg-white p-6 shadow-xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none swiper-slide-active'
-                    style={{ width: '352px', marginRight: '24px' }}
+                    className='flex flex-col rounded-3xl border border-gray-100 bg-white p-6 shadow-xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none'
                     key={item.id}
                     to={`/app/${item.id}`}
                     onClick={handleClick}
@@ -46,8 +44,12 @@ const Application = () => {
                     </div>
                   </Link>
                 )
-              })}
-            </div>
+              })
+            ) : (
+              <p className='text-gray-500 dark:text-gray-400'>
+                No applications available.
+              </p>
+            )}
           </div>
         </div>
       </div>
