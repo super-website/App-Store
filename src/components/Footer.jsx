@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <section id='contact-us' className='bg-slate-950'>
-        <div className='mx-auto py-8 px-4  sm:px-12 xl:max-w-6xl xl:px-0 flex justify-between'>
+        <div className='mx-auto py-8 px-4 sm:px-12 xl:max-w-6xl xl:px-0 flex flex-col md:flex-row justify-between'>
           <div>
             <h1 className='text-5xl text-left mb-6 pt-6'>
               <span>Let&#39;s Talk</span>
