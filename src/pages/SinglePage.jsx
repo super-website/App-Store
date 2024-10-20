@@ -21,24 +21,27 @@ const SinglePage = () => {
               </li>
             </ul>
           </div>
-          <div className='flex flex-col md:flex-row'>
-            <div className='border-white border p-2 max-w-max md:w-full mx-auto md:ml-0'>
+          <div className='flex flex-col md:flex-row '>
+            <div className='border-white border p-2 max-w-max md:mx-10  mx-auto md:ml-0'>
               <img src={page.src} width='200' height='200' alt='whatsapp' />
             </div>
             <div className='text-left  mt-4'>
-              <div className='ml-10'>
-                <h2 className='text-4xl text-info font-bold mb-4'>
+              <div className='md:text-left text-center w-full '>
+                <h2 className='md:text-3xl text-xl text-info font-bold mb-2'>
                   {page.title}
                 </h2>
-                <p className='text-primary'>{page.alt_description}</p>
+                <p className='text-base sm:text-lg text-primary'>
+                  {page.alt_description}
+                </p>
               </div>
-              <div className='mt-10 ml-20 md:ml-10 gap-5 flex items-center justify-start mr-20 '>
+
+              <div className='mt-10 flex flex-col md:flex-row  gap-5 max-w-max md:mx-0  mx-auto '>
                 <a
                   href={page.ios}
                   target='blank'
-                  className='relative  flex h-11 sm:h-9 w-36 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800'
+                  className='relative  flex h-11  w-44 md:w-36 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800'
                 >
-                  <span className='relative text-base sm:text-sm font-semibold text-primary dark:text-gray-900 lg:text-primary lg:dark:text-white flex items-center gap-2'>
+                  <span className='relative md:text-base text-sm  font-semibold text-primary dark:text-gray-900 lg:text-primary lg:dark:text-white flex items-center gap-2'>
                     <FaApple />
                     IOS Download
                   </span>
@@ -46,9 +49,9 @@ const SinglePage = () => {
                 <a
                   href={page.android}
                   target='blank'
-                  className='relative  flex h-11 sm:h-9 w-46 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800'
+                  className='relative  flex h-11  w-44 md:w-36 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800'
                 >
-                  <span className='relative text-base sm:text-sm font-semibold text-gray-900 dark:text-gray-900 lg:text-primary lg:dark:text-white flex items-center gap-2'>
+                  <span className='relative md:text-base text-sm  font-semibold text-primary dark:text-gray-900 lg:text-primary lg:dark:text-white flex items-center gap-2'>
                     <FaAndroid />
                     Android Download
                   </span>
