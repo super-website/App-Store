@@ -79,7 +79,7 @@ const SinglePage = () => {
               </h2>
             </div>
 
-            <div className='grid grid-cols-2 gap-20 items-center mb-20'>
+            <div className='grid md:grid-cols-2 gap-20 items-center mb-20 grid-cols-1'>
               <div>
                 <img
                   src='https://licenseware.io/wp-content/uploads/2022/11/MDM-Upload-1.png'
@@ -124,7 +124,7 @@ const SinglePage = () => {
               </div>
             </div>
 
-            <div className='grid grid-cols-2 gap-20 items-center mb-20'>
+            <div className='grid md:grid-cols-2 gap-20 items-center mb-20 grid-cols-1'>
               <div className='ml-10'>
                 <div>
                   <h2 className='text-3xl text-black'>Reports</h2>
@@ -175,7 +175,7 @@ const SinglePage = () => {
               </div>
             </div>
 
-            <div className='grid grid-cols-2 gap-20 items-center mb-20'>
+            <div className='grid md:grid-cols-2 gap-20 items-center mb-20 grid-cols-1'>
               <div>
                 <img
                   src='https://licenseware.io/wp-content/uploads/2022/11/MDM-Data.png'
