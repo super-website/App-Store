@@ -22,7 +22,7 @@ const SinglePage = () => {
             </ul>
           </div>
           <div className='flex flex-col md:flex-row'>
-            <div className='border-white border p-2 max-w-max md:w-full ml-36 md:ml-0'>
+            <div className='border-white border p-2 max-w-max md:w-full mx-auto md:ml-0'>
               <img src={page.src} width='200' height='200' alt='whatsapp' />
             </div>
             <div className='text-left  mt-4'>
