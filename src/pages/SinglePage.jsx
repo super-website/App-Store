@@ -9,7 +9,7 @@ const SinglePage = () => {
 
   return (
     <>
-      <section className='pt-40 md:pt-32 sm:pt-40 mb-10' id='home'>
+      <section className=' md:pt-0 mb-10' id='home'>
         <div className='max-w-6xl m-auto '>
           <div className='text-md breadcrumbs mb-3 ml-10 md:ml-0'>
             <ul>
