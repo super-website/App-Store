@@ -39,7 +39,7 @@ const SinglePage = () => {
                 <a
                   href={page.ios}
                   target='blank'
-                  className='relative  flex h-11  w-44 md:w-36 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800'
+                  className='relative  flex h-11  w-44 md:w-48 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800'
                 >
                   <span className='relative md:text-base text-sm  font-semibold text-primary dark:text-gray-900 lg:text-primary lg:dark:text-white flex items-center gap-2'>
                     <FaApple />
@@ -49,9 +49,9 @@ const SinglePage = () => {
                 <a
                   href={page.android}
                   target='blank'
-                  className='relative  flex h-11  w-44 md:w-36 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800'
+                  className='relative  flex h-11  w-44 md:w-48 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800'
                 >
-                  <span className='relative md:text-base text-sm  font-semibold text-primary dark:text-gray-900 lg:text-primary lg:dark:text-white flex items-center gap-2'>
+                  <span className='relative md:text-base   text-sm  font-semibold text-primary dark:text-gray-900 lg:text-primary lg:dark:text-white flex items-center gap-2'>
                     <FaAndroid />
                     Android Download
                   </span>
