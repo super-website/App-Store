@@ -2,30 +2,16 @@ import { Link, useParams } from 'react-router-dom'
 import { apps } from '../data'
 import { FaCheckCircle, FaApple, FaAndroid } from 'react-icons/fa'
 import Application from './Application'
-import { Helmet } from 'react-helmet'
 
 const SinglePage = () => {
   const { id } = useParams()
-  const page = apps.find((item) => item.id === +id)
-
-  if (!page) {
-    return <div>Page not found.</div>
-  }
+  const page = apps.find((item) => item.id == +id)
 
   return (
     <>
-      <Helmet>
-        <title>
-          {page.title} | {page.alt_description}
-        </title>
-        <meta
-          name='description'
-          content={page.description || 'Default description for your app.'}
-        />
-      </Helmet>
-      <section className='pt-20 sm:pt-10 mb-10' id='home'>
+      <section className='pt-40 md:pt-32 sm:pt-40 mb-10' id='home'>
         <div className='max-w-6xl m-auto '>
-          <div className='text-md breadcrumbs mb-3 sm:px-5 md:px-0'>
+          <div className='text-md breadcrumbs mb-3 ml-10 md:ml-0'>
             <ul>
               <li>
                 <Link to='/'>Home</Link>
@@ -35,14 +21,9 @@ const SinglePage = () => {
               </li>
             </ul>
           </div>
-          <div className='flex sm:flex-col md:flex-row'>
-            <div className='border-white border p-2 w-60 mx-auto md:mx-0'>
-              <img
-                src={page.src}
-                alt='whatsapp'
-                className='max-w-60 sm:mx-auto md:mx-0'
-                width={200}
-              />
+          <div className='flex flex-col md:flex-row'>
+            <div className='border-white border p-2 max-w-max md:w-full ml-36 md:ml-0'>
+              <img src={page.src} width='200' height='200' alt='whatsapp' />
             </div>
             <div className='text-left  mt-4'>
               <div className='ml-10'>
@@ -51,7 +32,7 @@ const SinglePage = () => {
                 </h2>
                 <p className='text-primary'>{page.alt_description}</p>
               </div>
-              <div className='mt-10 ml-10 gap-5 flex '>
+              <div className='mt-10 ml-20 md:ml-10 gap-5 flex items-center justify-start mr-20 '>
                 <a
                   href={page.ios}
                   target='blank'
