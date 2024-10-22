@@ -64,10 +64,10 @@ const SinglePage = () => {
         <div className='mt-28  text-center p-20  bg-white'>
           <div className='max-w-6xl m-auto '>
             <div className='p-5 md:p-10'>
-              <h2 className='text-2xl md:text-5xl font-bold text-black mb-8'>
+              <h2 className='text-2xl md:text-5xl font-bold text-black md:mb-8 mb-4 '>
                 {page.title}
               </h2>
-              <p className='md:max-w-2xl m-0 md:m-auto max-w-max  text-secondary'>
+              <p className='md:max-w-2xl m-0 md:m-auto max-w-max  text-secondary text-sm md:text-xl'>
                 {page.description}
               </p>
             </div>
