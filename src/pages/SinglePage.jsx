@@ -67,7 +67,7 @@ const SinglePage = () => {
               <h2 className='text-2xl md:text-5xl font-bold text-black mb-8'>
                 {page.title}
               </h2>
-              <p className='md:max-w-2xl m-0 md:m-auto  text-secondary'>
+              <p className='md:max-w-2xl m-0 md:m-auto max-w-max  text-secondary'>
                 {page.description}
               </p>
             </div>
