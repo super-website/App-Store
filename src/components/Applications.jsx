@@ -13,7 +13,7 @@ const Applications = () => {
           </h2>
         </div>
         <div className='mt-12'>
-          <div className='p-4'>
+          <div className='md:p-4 py-4'>
             <div
               className='grid lg:grid-cols-3 gap-24 px-4 md:grid-cols-2 grid-cols-1 '
               style={{ cursor: 'grab' }}
