@@ -6,11 +6,11 @@ const Footer = () => {
       <section id='contact-us' className='bg-slate-950'>
         <div className='mx-auto py-8 px-4 sm:px-12 xl:max-w-6xl xl:px-0 flex flex-col md:flex-row justify-between'>
           <div>
-            <h1 className='md:text-5xl text-left mb-6 pt-6 text-xl'>
+            <h1 className='md:text-5xl text-left mb-6 pt-6 text-2xl'>
               <span>Let&#39;s Talk</span>
-              <span className='md:text-4xl text-sm'>Do you have an idea?</span>
+              <span className='md:text-4xl text-xl'>Do you have an idea?</span>
             </h1>
-            <p className='text-left text-xs md:text-xl'>
+            <p className='text-left text-sm md:text-xl'>
               Contact us to learn how we can help you build the best digital
               solution for you.
             </p>
@@ -18,7 +18,7 @@ const Footer = () => {
           <div className='flex flex-col  items-end sm:mt-5 sm:items-right ml-40'>
             <a
               href='https://mail.google.com/mail/u/0/#inbox?compose=new'
-              className='btn-link'
+              className='link-error'
             >
               hello@theappfactory.io
             </a>
