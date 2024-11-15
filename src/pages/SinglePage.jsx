@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { apps } from '../data'
+import { Helmet } from 'react-helmet'
 import { FaCheckCircle, FaApple, FaAndroid } from 'react-icons/fa'
 import Application from './Application'
 
@@ -239,4 +240,3 @@ const SinglePage = () => {
 }
 
 export default SinglePage
-
