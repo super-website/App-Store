@@ -32,9 +32,9 @@ const SinglePage = () => {
             </div>
             <div className='text-left  mt-4'>
               <div className='md:text-left text-center w-full '>
-                <h2 className='md:text-3xl text-xl text-info font-bold mb-2'>
+                <h1 className='md:text-3xl text-xl text-info font-bold mb-2'>
                   {page.title}
-                </h2>
+                </h1>
                 <p className='text-base sm:text-lg text-primary'>
                   {page.alt_description}
                 </p>
