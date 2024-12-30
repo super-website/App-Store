@@ -3,13 +3,24 @@ import fs from 'fs'
 import { apps } from '../src/data.js'
 
 const links = [
-  { url: '/', changefreq: 'daily', priority: 1.0 },
+  {
+    url: '/',
+    changefreq: 'daily',
+    priority: 1.0,
+    lastmod: new Date().toISOString(),
+  },
   ...apps.map((item) => ({
     url: `/app/${item.id}`,
     changefreq: 'daily',
     priority: 0.8,
+    lastmod: new Date().toISOString(),
   })),
-  { url: '/faqs', changefreq: 'daily', priority: 1.0 },
+  {
+    url: '/faqs',
+    changefreq: 'daily',
+    priority: 1.0,
+    lastmod: new Date().toISOString(),
+  },
 ]
 
 const sitemapStream = new SitemapStream({
