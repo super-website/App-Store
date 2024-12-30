@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='navbar border-white/30 bg-gray-900/80'>
+    <div className='navbar border-white/30 bg-gray-900/80 sticky top-0 inset-x-0 z-20 w-full border-b backdrop-blur'>
       <div className='flex-1'>
         <Link to='/' onClick={handleClick}>
           <img
