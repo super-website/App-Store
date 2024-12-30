@@ -18,47 +18,49 @@ const Navbar = () => {
 
   return (
     <div className='navbar border-white/30 bg-gray-900/80 sticky top-0 inset-x-0 z-20 w-full border-b backdrop-blur shadow-lg'>
-      <div className='flex-1'>
-        <Link to='/' onClick={handleClick}>
-          <img
-            src={app_logo}
-            className='nav-logo max-h-full max-w-full'
-            alt='App Factory'
-          />
-        </Link>
-      </div>
-      <div className='flex-none'>
-        <ul className='menu menu-horizontal px-1'>
-          {pageLinks.map((link) => (
-            <li key={link.id}>
-              <NavLink
-                to={link.link}
-                onClick={handleClick}
-                className='block px-4 py-2 transition hover:text-primary dark:hover:text-primaryLight capitalize mb-5'
-              >
-                {link.text}
-              </NavLink>
-            </li>
-          ))}
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className='bg-base-100 rounded-t-none p-2'>
-                <a
-                  className='relative ml-auto flex h-9 px-4 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 md:hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight max-w-xs mx-auto'
-                  href='#contact-us'
+      <div className='mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0'>
+        <div className='flex-1'>
+          <Link to='/' onClick={handleClick}>
+            <img
+              src={app_logo}
+              className='nav-logo max-h-full max-w-full'
+              alt='App Factory'
+            />
+          </Link>
+        </div>
+        <div className='flex-none'>
+          <ul className='menu menu-horizontal px-1'>
+            {pageLinks.map((link) => (
+              <li key={link.id}>
+                <NavLink
+                  to={link.link}
+                  onClick={handleClick}
+                  className='block px-4 py-2 transition hover:text-primary dark:hover:text-primaryLight capitalize mb-5'
                 >
-                  <span className='relative text-base font-semibold text-gray-900 lg:text-primary lg:dark:text-white'>
-                    Let's Talk
-                  </span>
-                </a>
-                <li>
-                  <a>Link 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-        </ul>
+                  {link.text}
+                </NavLink>
+              </li>
+            ))}
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul className='bg-base-100 rounded-t-none p-2'>
+                  <a
+                    className='relative ml-auto flex h-9 px-4 items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 md:hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight max-w-xs mx-auto'
+                    href='#contact-us'
+                  >
+                    <span className='relative text-base font-semibold text-gray-900 lg:text-primary lg:dark:text-white'>
+                      Let's Talk
+                    </span>
+                  </a>
+                  <li>
+                    <a>Link 2</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
