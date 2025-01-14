@@ -29,7 +29,7 @@ const Hero = () => {
               </p>
             </div>
             <div className='mt-12 w-full overflow-hidden sm:mt-16 lg:-mr-20 lg:-mt-52 lg:w-6/12'>
-              <img src={logo} alt='logo' className='logo' />
+              <img src={logo} alt='logo' className='logo' loading='lazy' />
             </div>
           </div>
           <div className='mt-12 border-y border-gray-100 py-8 text-center dark:border-gray-800 md:py-12 xl:mt-20'>
@@ -50,6 +50,7 @@ const Hero = () => {
                       height={200}
                       className=' max-h-full  max-w-full'
                       src={src}
+                      loading='lazy'
                     />
                   </div>
                 )

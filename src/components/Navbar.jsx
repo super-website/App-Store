@@ -1,13 +1,12 @@
 import { useState } from 'react'
 import { pageLinks } from '../data'
 import app_logo from '../assets/app-logo.webp'
-import { Link, NavLink, useLocation } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-
-  const pathName = useLocation()
+  console.log(location)
 
   const handleClick = () => {
     window.scroll(0, 0)
