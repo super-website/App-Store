@@ -46,7 +46,7 @@ const Navbar = () => {
                 <NavLink
                   to={link.link}
                   onClick={handleClick}
-                  className='block px-4 py-2 transition hover:text-primary dark:hover:text-primaryLight capitalize mb-5'
+                  className='block px-4 py-2 transition hover:text-primary dark:hover:text-primaryLight capitalize '
                 >
                   {link.text}
                 </NavLink>
