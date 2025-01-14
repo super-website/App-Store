@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { pageLinks } from '../data'
 import app_logo from '../assets/app-logo.webp'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
+
+  const pathName = useLocation()
 
   const handleClick = () => {
     window.scroll(0, 0)
@@ -46,7 +48,11 @@ const Navbar = () => {
                 <NavLink
                   to={link.link}
                   onClick={handleClick}
-                  className='block px-4 py-2 transition hover:text-primary dark:hover:text-primaryLight capitalize '
+                  className={`block px-4 py-2 transition hover:text-primary  capitalize ${
+                    location.pathname === link.link
+                      ? 'text-primary font-bold'
+                      : 'text-white'
+                  } `}
                 >
                   {link.text}
                 </NavLink>
