@@ -6,7 +6,6 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  console.log(location)
 
   const handleClick = () => {
     window.scroll(0, 0)
