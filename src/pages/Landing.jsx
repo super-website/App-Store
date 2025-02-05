@@ -10,6 +10,10 @@ const Landing = () => {
           name='description'
           content='Unlock your ideas with our app factory! We craft stunning mobile and web applications tailored to your vision, ensuring exceptional user experiences and seamless functionality.'
         />
+        <meta
+          name='keywords'
+          content='app factory, mobile apps, web apps, app development'
+        />
       </Helmet>
       <Hero />
       <About />
