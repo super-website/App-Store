@@ -1,46 +1,46 @@
-import { SitemapStream, streamToPromise } from 'sitemap'
-import fs from 'fs'
-import { apps } from '../src/data.js'
+import { SitemapStream, streamToPromise } from "sitemap";
+import fs from "fs";
+import { apps } from "../src/data.js";
 
 const links = [
   {
-    url: '/',
-    changefreq: 'daily',
+    url: "/",
+    changefreq: "daily",
     priority: 1.0,
     lastmod: new Date().toISOString(),
   },
   ...apps.map((item) => ({
-    url: `/app/${item.id}`,
-    changefreq: 'daily',
+    url: `/app/${item.slug}`,
+    changefreq: "daily",
     priority: 0.8,
     lastmod: new Date().toISOString(),
   })),
   {
-    url: '/faqs',
-    changefreq: 'daily',
+    url: "/faqs",
+    changefreq: "daily",
     priority: 1.0,
     lastmod: new Date().toISOString(),
   },
-]
+];
 
 const sitemapStream = new SitemapStream({
-  hostname: 'https://appforge.netlify.app/',
-})
+  hostname: "https://appforge.netlify.app/",
+});
 
-const writeStream = fs.createWriteStream('./public/sitemap.xml')
+const writeStream = fs.createWriteStream("./public/sitemap.xml");
 
-sitemapStream.pipe(writeStream)
+sitemapStream.pipe(writeStream);
 
 links.forEach((link) => {
-  sitemapStream.write(link)
-})
+  sitemapStream.write(link);
+});
 
-sitemapStream.end()
+sitemapStream.end();
 
 streamToPromise(sitemapStream)
   .then(() => {
-    console.log('Sitemap generated successfully!')
+    console.log("Sitemap generated successfully!");
   })
   .catch((err) => {
-    console.error('Error generating sitemap:', err)
-  })
+    console.error("Error generating sitemap:", err);
+  });
