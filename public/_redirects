@@ -5,3 +5,4 @@ https://www.appforge.netlify.app/* https://appforge.netlify.app/:splat 301!
 
 # Serve index.html for any other request
 /*    /index.html   200
+
