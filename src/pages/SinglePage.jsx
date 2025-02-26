@@ -6,7 +6,6 @@ import Application from "./Application";
 
 const SinglePage = () => {
   const { id } = useParams();
-
   const page = apps.find((item) => item.slug === id);
 
   return (
