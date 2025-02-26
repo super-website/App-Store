@@ -62,7 +62,7 @@ const Navbar = () => {
                 href="#contact-us"
               >
                 <span className="relative text-base font-semibold   lg:dark:text-white">
-                  Let's Talk
+                  Let&amp;s Talk
                 </span>
               </a>
             </li>
