@@ -20,7 +20,7 @@ export const apps = [
   {
     id: 2,
     slug: "wetransfer",
-    src: "https://avatars.githubusercontent.com/u/14807662?s=280&v=4",
+    src: "https://play-lh.googleusercontent.com/L7KDvp_W27KHMqwq6FMA8NzxPJgKjEMtGMe7SKBr4cpjoLFvrxhSvRJ7pAbHPxoZ9_E",
     alt_description: "AI Solutions",
     title: "WeTransfer",
     description:
