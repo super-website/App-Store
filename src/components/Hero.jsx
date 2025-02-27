@@ -46,9 +46,7 @@ const Hero = () => {
                   >
                     <img
                       alt={alt_description}
-                      width={200}
-                      height={200}
-                      className=' max-h-full  max-w-full'
+                      className='max-h-full max-w-full object-contain'
                       src={src}
                       loading='lazy'
                     />
