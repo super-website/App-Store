@@ -60,7 +60,7 @@ const Tracks = () => {
         <input
           type='text'
           placeholder='Search for a track...'
-          className='input input-bordered w-96 shadow-md focus:outline-none focus:ring-2 focus:ring-primary text-black'
+          className='input input-bordered w-96 shadow-md focus:outline-none focus:ring-2 focus:ring-primary text-black placeholder:text-black'
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
