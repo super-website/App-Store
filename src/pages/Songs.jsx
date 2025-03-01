@@ -41,8 +41,6 @@ const Tracks = () => {
     fetchTracks()
   }, [limit])
 
-  console.log(tracks)
-
   if (isLoading) {
     return (
       <div className=''>
