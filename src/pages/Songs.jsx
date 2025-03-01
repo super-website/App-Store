@@ -60,7 +60,7 @@ const Tracks = () => {
         <input
           type='text'
           placeholder='Search for a track...'
-          className='input input-bordered w-96 shadow-md focus:outline-none focus:ring-2 focus:ring-primary'
+          className='input input-bordered w-96 shadow-md focus:outline-none focus:ring-2 focus:ring-primary text-black'
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
@@ -120,15 +120,17 @@ const Tracks = () => {
         )}
       </div>
 
-      <div className='text-center mt-8'>
-        <button
-          className='btn btn-primary px-6 py-2 rounded-md shadow-md hover:bg-primary-focus transition-all duration-200'
-          onClick={() => setLimit((prev) => prev + 5)}
-          disabled={isLoading}
-        >
-          {isLoading ? 'Loading...' : 'Show More'}
-        </button>
-      </div>
+      {tracks.length > 0 && (
+        <div className='text-center mt-8'>
+          <button
+            className='btn btn-primary px-6 py-2 rounded-md shadow-md hover:bg-primary-focus transition-all duration-200'
+            onClick={() => setLimit((prev) => prev + 5)}
+            disabled={isLoading}
+          >
+            {isLoading ? 'Loading...' : 'Show More'}
+          </button>
+        </div>
+      )}
     </div>
   )
 }
