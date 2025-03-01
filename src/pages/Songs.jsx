@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { FaSpotify } from 'react-icons/fa'
 
 const key = '4200236921msh6f55cd855578ddap111fd8jsnaa1c18381ea5'
 
@@ -31,7 +30,7 @@ const Tracks = () => {
 
         const data = await response.json()
 
-        setTracks(data.tracks?.items || []) // Correcting the data source
+        setTracks(data.tracks?.items || [])
       } catch (error) {
         console.error('Error fetching tracks:', error)
       } finally {
@@ -42,9 +41,11 @@ const Tracks = () => {
     fetchTracks()
   }, [limit])
 
+  console.log(tracks)
+
   if (isLoading) {
     return (
-      <div className='py-6'>
+      <div className='mt-12 py-6'>
         <h1 className='text-4xl text-center font-bold'>Tracks</h1>
         <div className='grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3 lg:gap-4 md:grid-cols-2 '>
           <div className='flex w-96 flex-col gap-4 m-10 '>
@@ -77,7 +78,7 @@ const Tracks = () => {
   }
 
   return (
-    <div className='min-h-full  py-6'>
+    <div className='min-h-full mt-12 py-6'>
       <h1 className='text-4xl text-center font-bold'>Tracks</h1>
       <div className='grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3 lg:gap-4 md:grid-cols-2 '>
         {tracks.length === 0 ? (
@@ -104,19 +105,16 @@ const Tracks = () => {
                       {track?.data?.artists?.items?.[0]?.profile?.name ||
                         'Unknown Artist'}
                     </p>
-                    {/* Spotify Playable Link */}
+
                     {track?.data?.uri && (
-                      <a
-                        href={`https://open.spotify.com/track/${
+                      <iframe
+                        src={`https://open.spotify.com/embed/track/${
                           track.data.uri.split(':')[2]
                         }`}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='btn btn-primary mt-3'
-                      >
-                        <FaSpotify className='mr-2' />
-                        Listen on Spotify
-                      </a>
+                        width='100%'
+                        height='100'
+                        allow='encrypted-media'
+                      ></iframe>
                     )}
                   </div>
                 </div>
