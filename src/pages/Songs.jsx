@@ -45,7 +45,7 @@ const Tracks = () => {
 
   if (isLoading) {
     return (
-      <div className='mt-12 py-6'>
+      <div className=''>
         <h1 className='text-4xl text-center font-bold'>Tracks</h1>
         <div className='grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3 lg:gap-4 md:grid-cols-2 '>
           <div className='flex w-96 flex-col gap-4 m-10 '>
@@ -78,7 +78,7 @@ const Tracks = () => {
   }
 
   return (
-    <div className='min-h-full mt-12 py-6'>
+    <div className='min-h-full '>
       <h1 className='text-4xl text-center font-bold'>Tracks</h1>
       <div className='grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3 lg:gap-4 md:grid-cols-2 '>
         {tracks.length === 0 ? (
