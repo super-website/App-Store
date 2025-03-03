@@ -5,6 +5,7 @@ import SinglePage from './pages/SinglePage'
 import Faqs from './components/Faqs'
 import Error from './pages/Error'
 import Songs from './pages/Songs'
+import { HelmetProvider } from 'react-helmet-async'
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        index: 'true',
+        index: true,
         element: <Landing />,
       },
       {
@@ -33,7 +34,11 @@ const router = createBrowserRouter([
 ])
 
 const App = () => {
-  return <RouterProvider router={router} scrollTop={0} />
+  return (
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
+  )
 }
 
 export default App

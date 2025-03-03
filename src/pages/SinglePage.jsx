@@ -1,8 +1,8 @@
 import { Link, useParams } from 'react-router-dom'
 import { apps } from '../data'
+import { Helmet } from 'react-helmet'
 import { FaCheckCircle, FaApple, FaAndroid } from 'react-icons/fa'
 import Application from './Application'
-import { Helmet } from 'react-helmet-async'
 
 const SinglePage = () => {
   const { id } = useParams()
@@ -14,7 +14,6 @@ const SinglePage = () => {
         <title>{page.title} | At AppFactory</title>
         <meta name='description' content={page.alt_description} />
         <meta name='keywords' content={page.tags?.join(', ')} />
-
         <meta property='og:title' content={page.title} />
         <meta property='og:description' content={page.alt_description} />
       </Helmet>
