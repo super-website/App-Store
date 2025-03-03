@@ -1,8 +1,8 @@
 import { Link, useParams } from 'react-router-dom'
 import { apps } from '../data'
-import { Helmet } from 'react-helmet-async'
 import { FaCheckCircle, FaApple, FaAndroid } from 'react-icons/fa'
 import Application from './Application'
+import { Helmet } from 'react-helmet-async'
 
 const SinglePage = () => {
   const { id } = useParams()
