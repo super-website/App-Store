@@ -1,37 +1,37 @@
-import { Helmet } from 'react-helmet'
-import { faqs } from '../data'
+import { Helmet } from "react-helmet-async";
+import { faqs } from "../data";
 const Faqs = () => {
   return (
-    <div className='max-w-6xl bg-gray-900 m-auto py-10'>
-      <h2 className='text-3xl text-center text-white my-3'>Faqs</h2>
+    <div className="max-w-6xl bg-gray-900 m-auto py-10">
+      <h2 className="text-3xl text-center text-white my-3">Faqs</h2>
       {faqs.map((faq) => {
-        const { id, question, answer } = faq
+        const { id, question, answer } = faq;
         return (
           <>
             <Helmet>
-              <title>FAQs</title>
+              <title>Learning React Helmet!</title>
               <meta
-                name='description'
-                content='Frequently asked questions about our services.'
+                name="description"
+                content="Beginner friendly page for learning React Helmet."
               />
             </Helmet>
-            <div className='collapse collapse-plus bg-gray-900' key={id}>
-              <input type='radio' name='accordion' id={id} />
+            <div className="collapse collapse-plus bg-gray-900" key={id}>
+              <input type="radio" name="accordion" id={id} />
               <label
                 htmlFor={id}
-                className='collapse-title text-xl font-medium text-white'
+                className="collapse-title text-xl font-medium text-white"
               >
                 {question}
               </label>
-              <div className='collapse-content'>
+              <div className="collapse-content">
                 <p>{answer}</p>
               </div>
             </div>
           </>
-        )
+        );
       })}
     </div>
-  )
-}
+  );
+};
 
-export default Faqs
+export default Faqs;
