@@ -1,15 +1,15 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import HomeLayout from "./pages/HomeLayout";
-import Landing from "./pages/Landing";
-import SinglePage from "./pages/SinglePage";
-import Faqs from "./components/Faqs";
-import Error from "./pages/Error";
-import Songs from "./pages/Songs";
-import { HelmetProvider } from "react-helmet-async";
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import HomeLayout from './pages/HomeLayout'
+import Landing from './pages/Landing'
+import SinglePage from './pages/SinglePage'
+import Faqs from './components/Faqs'
+import Error from './pages/Error'
+import Songs from './pages/Songs'
+import { HelmetProvider } from 'react-helmet-async'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <HomeLayout />,
     errorElement: <Error />,
     children: [
@@ -18,29 +18,29 @@ const router = createBrowserRouter([
         element: <Landing />,
       },
       {
-        path: "app/:id",
+        path: 'app/:id',
         element: <SinglePage />,
       },
       {
-        path: "faqs",
+        path: 'faqs',
         element: <Faqs />,
       },
       {
-        path: "tracks",
+        path: 'tracks',
         element: <Songs />,
       },
     ],
   },
-]);
+])
 
-const helemetContext = {};
+const helmetContext = {}
 
 const App = () => {
   return (
-    <HelmetProvider context={helemetContext}>
+    <HelmetProvider context={helmetContext}>
       <RouterProvider router={router} />
     </HelmetProvider>
-  );
-};
+  )
+}
 
-export default App;
+export default App
