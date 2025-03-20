@@ -1,2 +1,3 @@
 User-agent: *
-Allow: /sitemap.xml
+Allow: /
+Sitemap: https://appforge.netlify.app/sitemap.xml
