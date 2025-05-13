@@ -12,25 +12,25 @@ const links = [
   ...apps.map((item) => ({
     url: `/app/${item.slug}`,
     changefreq: 'daily',
-    priority: 0.8,
+    priority: 0.9,
     lastmod: new Date().toISOString(),
   })),
   {
     url: '/faqs',
     changefreq: 'daily',
-    priority: 1.0,
+    priority: 0.9,
     lastmod: new Date().toISOString(),
   },
   {
     url: '/tracks',
     changefreq: 'daily',
-    priority: 1.0,
+    priority: 0.9,
     lastmod: new Date().toISOString(),
   },
 ]
 
 const sitemapStream = new SitemapStream({
-  hostname: 'https://appforge.netlify.app/',
+  hostname: 'https://appforge.netlify.app',
 })
 
 const writeStream = fs.createWriteStream('./public/sitemap.xml')
