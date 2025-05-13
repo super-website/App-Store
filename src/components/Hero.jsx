@@ -29,7 +29,13 @@ const Hero = () => {
               </p>
             </div>
             <div className='mt-12 w-full overflow-hidden sm:mt-16 lg:-mr-20 lg:-mt-52 lg:w-6/12'>
-              <img src={logo} alt='logo' className='logo' loading='lazy' />
+              <img
+                src={logo}
+                alt='logo'
+                className='logo'
+                width='120'
+                height='40'
+              />
             </div>
           </div>
           <div className='mt-12 border-y border-gray-100 py-8 text-center dark:border-gray-800 md:py-12 xl:mt-20'>
