@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='mx-auto py-8 px-4 sm:px-12 xl:max-w-6xl xl:px-0 flex flex-col md:flex-row justify-between'>
           <div>
             <h1 className='md:text-5xl text-left mb-6 pt-6 text-2xl'>
-              <span>Let&apos;s Talk</span>
+              <span>Let's Talk</span>
               <span className='md:text-4xl text-xl'>Do you have an idea?</span>
             </h1>
             <p className='text-left text-sm md:text-xl'>
