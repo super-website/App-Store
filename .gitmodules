@@ -1,0 +1,3 @@
+[submodule "App-Factory"]
+   path = App-Factory
+   url = https://github.com/super-website/app-factory-12.git
