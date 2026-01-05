@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet'
 import { About, Applications, Hero } from '../components'
+import Slider from '../components/Slider'
 
 const Landing = () => {
   return (
@@ -18,6 +19,7 @@ const Landing = () => {
       <Hero />
       <About />
       <Applications />
+      <Slider />
     </div>
   )
 }
